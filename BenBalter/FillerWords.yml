@@ -1,0 +1,9 @@
+extends: existence
+message: "Do not start a paragraph with a 'but'."
+level: error
+action:
+  name: remove
+tokens:
+  - I think
+  - In my mind
+  - I believe
