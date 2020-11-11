@@ -1,0 +1,6 @@
+extends: substitution
+message: 'If possible, use "%s" instead of "%s".'
+level: warning
+ignorecase: true
+swap:
+  repo: repository

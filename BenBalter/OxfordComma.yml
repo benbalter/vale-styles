@@ -1,0 +1,5 @@
+extends: existence
+message: 'Use a comma before the last "and" or "or" in a list of four or more items.'
+level: warning
+raw:
+  - '(?:[^\s,]+,){1,} \w+ (?:and|or) \w+[.?!]'
