@@ -1,9 +1,15 @@
 extends: substitution
 message: 'Use inclusive language. Consider "%s" instead of "%s".'
-level: warning
 ignorecase: true
+level: error
+action:
+  name: replace
 swap:
-  blacklist(?:ed|ing|s)?: denylist
-  whitelist(?:ed|ing|s)?: allowlist
+  black\s?list\s?(?:ed)?: blocklist
+  white\s?list\s?(?:ed)?: allowlist
+  sanity check(?:ing)?: gut check
+  brown bag session: lunch and learn
+  redline(?:ing)?: markup
+  rule of thumb: standard, principle
   master: primary, main
   slave: secondary
