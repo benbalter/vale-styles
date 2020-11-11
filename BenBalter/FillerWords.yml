@@ -1,5 +1,5 @@
 extends: existence
-message: "Do not start a paragraph with a 'but'."
+message: "Avoid filler words"
 level: error
 action:
   name: remove
