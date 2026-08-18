@@ -41,6 +41,18 @@ assert_fires "BenBalter.Buzzwords"
 assert_fires "BenBalter.Assumptive"
 assert_fires "BenBalter.Cliches"
 
+# Clean fixture must trip nothing — catches rules that became overzealous
+# (false positives), the direction "does it fire?" tests miss.
+clean_out="$(vale --config="$cfg" --output=JSON testdata/clean.md || true)"
+clean_hits="$(printf '%s' "$clean_out" | grep -c '"Check":"BenBalter' || true)"
+if [ "$clean_hits" -eq 0 ]; then
+	echo "ok    clean fixture trips nothing"
+else
+	echo "FAIL  clean fixture produced $clean_hits BenBalter alert(s):"
+	printf '%s\n' "$clean_out" | grep -o '"Check":"BenBalter[^"]*"'
+	fail=1
+fi
+
 if [ "$fail" -ne 0 ]; then
 	echo "Tests failed." >&2
 	exit 1
