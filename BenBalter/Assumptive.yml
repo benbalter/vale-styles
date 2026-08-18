@@ -1,0 +1,18 @@
+extends: existence
+message: "'%s' assumes the reader already knows this. If it's worth saying, explain it."
+ignorecase: true
+level: warning
+tokens:
+  - simply
+  - of course
+  - needless to say
+  - it goes without saying
+  - as you know
+  - as we all know
+  - as everyone knows
+  - it's obvious
+  - it is obvious
+  - it's clear that
+  - it is clear that
+  - obviously enough
+  - as is well known
