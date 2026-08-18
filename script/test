@@ -1,0 +1,48 @@
+#!/bin/sh
+#
+# Smoke test: run the BenBalter style against fixtures in testdata/ and assert
+# each rule fires on prose crafted to trip it. Catches broken YAML, renamed
+# rules, or regexes that silently stop matching. Not exhaustive — one positive
+# case per rule under test.
+
+set -e
+
+if ! [ -x "$(command -v vale)" ]; then
+	echo "Vale not found. Install from https://vale.sh to run the tests." >&2
+	exit 1
+fi
+
+# Throwaway config: enable the local style against the fixtures.
+cfg="$(mktemp)"
+trap 'rm -f "$cfg"' EXIT
+cat > "$cfg" <<EOF
+StylesPath = $(pwd)
+MinAlertLevel = suggestion
+
+[*.md]
+BasedOnStyles = BenBalter
+EOF
+
+# Vale exits non-zero when it finds alerts, which is exactly what we want here,
+# so don't let `set -e` abort on it.
+out="$(vale --config="$cfg" --output=JSON testdata/*.md || true)"
+
+fail=0
+assert_fires() {
+	if printf '%s' "$out" | grep -q "\"$1\""; then
+		echo "ok    $1 fires"
+	else
+		echo "FAIL  $1 did not fire on its fixture"
+		fail=1
+	fi
+}
+
+assert_fires "BenBalter.Buzzwords"
+assert_fires "BenBalter.Assumptive"
+assert_fires "BenBalter.Cliches"
+
+if [ "$fail" -ne 0 ]; then
+	echo "Tests failed." >&2
+	exit 1
+fi
+echo "All tests passed."
