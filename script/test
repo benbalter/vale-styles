@@ -12,6 +12,12 @@ if ! [ -x "$(command -v vale)" ]; then
 	exit 1
 fi
 
+# Point Vale's default styles directory at this repo too. Otherwise a
+# BenBalter style installed globally (e.g. by `vale sync` elsewhere, under
+# ~/Library/Application Support/vale/styles on macOS) loads first and the
+# tests silently run against that copy instead of the rules in this checkout.
+export VALE_STYLES_PATH="$(pwd)"
+
 # Throwaway config: enable the local style against the fixtures.
 cfg="$(mktemp)"
 trap 'rm -f "$cfg"' EXIT
@@ -40,6 +46,7 @@ assert_fires() {
 assert_fires "BenBalter.Buzzwords"
 assert_fires "BenBalter.Assumptive"
 assert_fires "BenBalter.Cliches"
+assert_fires "BenBalter.CulturalInclusion"
 
 # Clean fixture must trip nothing — catches rules that became overzealous
 # (false positives), the direction "does it fire?" tests miss.
