@@ -1,0 +1,16 @@
+extends: existence
+message: "'%s' is a mic-drop closer. Work the point into the surrounding sentence."
+level: suggestion
+nonword: true
+# A curated subset of tbhb/vale-ai-tells MicDrop (MIT, see
+# LICENSE-vale-ai-tells). Its broad "Not X." and "X, not Y." fragments fire on
+# Ben's deliberate voice, so only the stock closers stay.
+tokens:
+  - '\bFull stop\.'
+  - '(?:^|[.!?"] )Period\.'
+  - '\bAnd (?:it|that) (?:shows|works|matters|helps|scales)\.'
+  - '\bAnd that''?s (?:okay|fine|enough|the point)\.'
+  - '\b(?:It|This|That) (?:matters|compounds|scales|pays off|adds up)\.'
+  - '\b(?:It|This|That)(?:''s| is) (?:by design|on purpose|no accident|no coincidence|not optional)\.'
+  - '\bEverything (?:is|was) (?:intentional|deliberate|purposeful)\.'
+  - '\bNothing (?:is|was) (?:accidental|wasted|arbitrary)\.'

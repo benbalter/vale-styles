@@ -1,0 +1,20 @@
+extends: existence
+message: "'%s' says one thing is another in costume. Name what it is and how it differs."
+ignorecase: true
+nonword: true
+level: warning
+# Adapted from tbhb/vale-ai-tells FigurativeDisguises (MIT, see
+# LICENSE-vale-ai-tells). "Pretend to be" is left out: Ben uses it literally.
+tokens:
+  - '\bdress(?:ed|es|ing) (?:\w+ ){0,2}(?:up )?as\b'
+  - '\bdisguis(?:ed|es|ing) (?:\w+ ){0,2}as\b'
+  - '\bmasquerad(?:e|es|ed|ing) (?:\w+ ){0,2}as\b'
+  - '\bparad(?:es|ed|ing) (?:\w+ ){0,2}as\b'
+  - '\b(?:what|which) passes for\b'
+  - '\bpass(?:es|ed|ing)? (?:itself|themselves|it|them) off as\b'
+  - '\bpassed off as\b'
+  - '\bcosplay(?:s|ed|ing)? as\b'
+  - '\bin disguise\b'
+  - '\b(?:in|under) the guise of\b'
+  - '\bin sheep(?:''|’)?s clothing\b'
+  - '\bin a trench ?coat\b'

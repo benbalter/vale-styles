@@ -1,0 +1,18 @@
+extends: existence
+message: "'%s' claims insider knowledge. State the point directly."
+ignorecase: true
+level: warning
+# Adapted from tbhb/vale-ai-tells (MIT, see LICENSE-vale-ai-tells). "The
+# dirty secret" stays out: Ben uses it as an earned hook that then pays off.
+# "The elephant in the room" lives in BenBalter.CorporateSpeak.
+tokens:
+  - (?:nobody|no one) (?:is )?talking about
+  - (?:nobody|no one) talks about
+  - (?:nobody|no one) (?:mentions|discusses)
+  - the part (?:nobody|no one) (?:mentions|talks about)
+  - (?:here's )?what (?:nobody|no one) tells you
+  - what most people (?:miss|overlook|forget)
+  - the (?:uncomfortable|inconvenient|unspoken|hidden) truth
+  - the unspoken reality
+  - the hidden costs?
+  - the silent killer

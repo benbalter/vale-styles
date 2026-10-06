@@ -1,0 +1,11 @@
+extends: existence
+message: "'%s' italicizes a common word for emphasis. Let the sentence carry it."
+level: suggestion
+nonword: true
+scope: raw
+# Adapted from tbhb/vale-ai-tells EmphaticCopula (MIT, see
+# LICENSE-vale-ai-tells). Italic "not", "never", and "literally" stay out:
+# Ben's pre-2023 posts use them for real contrast.
+tokens:
+  - '\*(?:is|are|was|were|the|and|or|actually|really|truly)\*'
+  - ' _(?:is|are|was|were|the|and|or|actually|really|truly)_'
