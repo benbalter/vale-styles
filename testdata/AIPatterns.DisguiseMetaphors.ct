@@ -1,0 +1,6 @@
+$ cdf ${REPO}/fixtures/AIPatterns.DisguiseMetaphors
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:16:AIPatterns.DisguiseMetaphors:'dressed up as' says one thing is another in costume. Name what it is and how it differs.
+test.md:5:18:AIPatterns.DisguiseMetaphors:'in disguise' says one thing is another in costume. Name what it is and how it differs.
+test.md:7:20:AIPatterns.DisguiseMetaphors:'in a trench coat' says one thing is another in costume. Name what it is and how it differs.
+test.md:9:20:AIPatterns.DisguiseMetaphors:'cosplaying as' says one thing is another in costume. Name what it is and how it differs.
