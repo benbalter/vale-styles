@@ -39,13 +39,17 @@ severity (or turn it off) in your own `.vale.ini` — e.g. `BenBalter.Buzzwords 
 | `HyphenatedAdverbs` | warning | Unneeded hyphens after `-ly` adverbs. |
 | `MeaningfulLinkWords` | warning | Non-descriptive link text ("click here", "this"). |
 | `OxfordComma` | warning | Missing serial comma in lists of four or more. |
+| `Redundancy` | suggestion | Wordy phrases with a shorter form ("in order to", "the vast majority of"). |
 | `SentanceSpacing` | error | Double spaces between sentences. |
 | `So` | error | Sentences that open with "so". |
 
 ## AIPatterns rules
 
 Calibrated against pre-AI posts on ben.balter.com, so they fire on AI tells
-rather than on Ben's deliberate voice.
+rather than on Ben's deliberate voice. `DisguiseMetaphors`, `EmphaticItalics`,
+`FalseExclusivity`, `LabelAndExplain`, and `MicDrop` are curated subsets of
+[vale-ai-tells](https://github.com/tbhb/vale-ai-tells) rules (MIT), keeping only
+the patterns that are near zero in Ben's pre-2023 posts.
 
 | Rule | Level | Flags |
 | --- | --- | --- |
@@ -53,10 +57,15 @@ rather than on Ben's deliberate voice.
 | `Antithesis` | suggestion | "It's not X, it's Y" constructions. |
 | `Aphorisms` | suggestion | Formulaic aphorisms in place of a concrete claim. |
 | `ChatbotArtifacts` | error | Chatbot leftovers ("I hope this helps", "Certainly!"). |
+| `DisguiseMetaphors` | warning | One thing "dressed up as" or "in a trench coat" as another. |
 | `EmDash` | warning | Em dashes. En dashes for ranges are fine. |
+| `EmphaticItalics` | suggestion | Italicized common words (*is*, *and*, *actually*) doing the sentence's work. |
+| `FalseExclusivity` | warning | Insider-knowledge claims ("what nobody tells you", "the hidden cost"). |
 | `Fingerprints` | error | Generation fingerprints ("as an AI language model", leaked citation markup). |
 | `Flourishes` | warning | Dramatic flourishes ("Buckle up", "Let that sink in"). |
+| `LabelAndExplain` | warning | "The catch: ..." label-and-colon reveals. |
 | `MetaCommentary` | error | "Let's dive into", "Let's explore". |
+| `MicDrop` | suggestion | Stock closers ("Full stop.", "And it shows."). |
 | `PerformativeEnthusiasm` | error | "Great question!", "Excellent point!". |
 | `PlainWords` | warning | Inflated words with plain substitutes. |
 | `RhetoricalQuestions` | suggestion | Self-answered setups ("So why does this matter?"). |

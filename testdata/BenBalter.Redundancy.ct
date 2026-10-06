@@ -1,0 +1,6 @@
+$ cdf ${REPO}/fixtures/BenBalter.Redundancy
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:15:BenBalter.Redundancy:'in order to' is wordy. Use 'to'.
+test.md:5:1:BenBalter.Redundancy:'The vast majority of' is wordy. Use 'most'.
+test.md:7:19:BenBalter.Redundancy:'on a daily basis' is wordy. Use 'daily'.
+test.md:9:15:BenBalter.Redundancy:'make a decision' is wordy. Use 'decide'.
