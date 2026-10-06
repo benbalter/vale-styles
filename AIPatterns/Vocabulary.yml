@@ -14,7 +14,7 @@ tokens:
   - paradigm
   - beacon
   - cutting-edge
-  - underscores?
+  - 'underscores?(?= (?:the|a|an|how|why|what|that|this|these|its|their|our|his|her))'
   - meticulous(ly)?
   - game-chang(er|ing)
   - watershed moment
