@@ -1,5 +1,6 @@
 extends: existence
 message: "Em dash (—) reads as the top AI tell. Use a comma, colon, parentheses, or split into two sentences. (En dashes for ranges are fine.)"
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/EmDash.yml
 level: warning
 nonword: true
 tokens:

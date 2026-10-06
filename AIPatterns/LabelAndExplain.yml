@@ -1,5 +1,6 @@
 extends: existence
 message: "'%s' sets up a label-and-colon reveal. Fold the label into a real sentence."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/LabelAndExplain.yml
 level: warning
 nonword: true
 scope:

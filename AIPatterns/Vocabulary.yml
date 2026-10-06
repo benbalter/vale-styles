@@ -1,35 +1,32 @@
 extends: existence
 message: "'%s' is a word AI overuses. Consider a plainer, more specific alternative."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/Vocabulary.yml
 ignorecase: true
 level: warning
 # Only tells that are essentially absent from 15 years of Ben's posts live here.
 # Words he genuinely uses (empower, foster, facilitate, robust, comprehensive,
 # harness, navigate, crucial, actionable, showcase, seamless, embark, reimagine,
 # vibrant, impactful, endeavor) are deliberately omitted — flagging his own voice
-# would just be noise. See PlainWords.yml for the 1:1 swaps.
+# would just be noise. See PlainWords.yml for the 1:1 swaps. Words with a
+# suggested replacement (tapestry, myriad, holistic, ...) live in
+# BenBalter.Buzzwords, so one word raises one alert.
 tokens:
   - delve
-  - tapestry
-  - realm
-  - paradigm
+  - '(?<!in the )realm'
+  - 'paradigm(?! shift)'
   - beacon
-  - cutting-edge
-  - 'underscores?(?= (?:the|a|an|how|why|what|that|this|these|its|their|our|his|her))'
   - meticulous(ly)?
-  - game-chang(er|ing)
+  - game-changing
   - watershed moment
   - nestled
   - bustling
   - intricate
   - intricacies
   - ever-evolving
-  - holistic(ally)?
   - learnings
   - thought leader(ship)?
   - interplay
   - symphony
-  - myriad
-  - plethora
   - quintessential
   - multifaceted
   - burgeoning
@@ -41,6 +38,5 @@ tokens:
   - juxtapose
   - spearhead
   - bolster
-  - unleash
   - overarching
   - poised to

@@ -1,5 +1,6 @@
 extends: existence
 message: "'%s' is an AI-like writing pattern. State the point directly."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/AITics.yml
 ignorecase: true
 level: error
 tokens:

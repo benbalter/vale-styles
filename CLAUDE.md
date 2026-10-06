@@ -6,6 +6,11 @@ Two [Vale](https://vale.sh) style packages, one YAML rule per file: the house ru
 
 - `script/lint && script/test` is what CI runs: yamllint and gofmt, then [go-cmdtest](https://github.com/google/go-cmdtest) golden-file tests ([`main_test.go`](main_test.go)). They need `yamllint`, `go`, and `vale` on `PATH`. Keep the local Vale version in step with `VALE_VERSION` in [`ci.yml`](.github/workflows/ci.yml), since output can change between releases.
 - Every rule needs a [`fixtures/<Style>.<Rule>/`](fixtures/) (a `.vale.ini` enabling only that rule, plus a `test.md` with `## Flag`, `## Leave alone`, and any `## Known false positives` or `## Known misses`) and a matching [`testdata/<Style>.<Rule>.ct`](testdata/) case; `TestEveryRuleHasACase` fails otherwise. After changing a rule or fixture, run `script/test -update` and review the `.ct` diff line by line before committing: it's the record of exactly what each rule flags. [`fixtures/clean`](fixtures/clean/) runs every rule at once and must stay empty.
+- [`rules_test.go`](rules_test.go) checks the rule files themselves:
+  - Every plain-text token fires, and no other rule flags the same words. One phrase gets one alert, so when two rules overlap, keep the token in the rule that owns it. `Buzzwords` owns words with a suggested replacement; `BenBalter.So` and `But` are the only allowed overlaps.
+  - Every rule has a `link:` to its own file, and its level matches the README table.
+  - Levels: `error` is for near-zero-false-positive AI tells; house style is `warning`; judgment calls are `suggestion`.
+  - Tokens with an apostrophe use `['’]`, so curly quotes match too. Inside a character class, write `'’` (not `['’]`).
 
 ## Releasing
 
