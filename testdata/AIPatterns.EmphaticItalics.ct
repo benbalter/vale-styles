@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/AIPatterns.EmphaticItalics
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:19:AIPatterns.EmphaticItalics:'*is*' italicizes a common word for emphasis. Let the sentence carry it.
+test.md:5:9:AIPatterns.EmphaticItalics:'*and*' italicizes a common word for emphasis. Let the sentence carry it.
+test.md:7:4:AIPatterns.EmphaticItalics:'*actually*' italicizes a common word for emphasis. Let the sentence carry it.

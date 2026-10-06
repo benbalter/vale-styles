@@ -1,0 +1,30 @@
+extends: substitution
+message: "'%[2]s' is wordy. Use '%[1]s'."
+ignorecase: true
+level: suggestion
+# Moved from the book's generated Book style so the blog and book share it.
+swap:
+  in order to: to
+  due to the fact that: because
+  at this point in time: now
+  whether or not: whether
+  each and every: each
+  first and foremost: first
+  in the event that: if
+  for the purpose of: to
+  on a daily basis: daily
+  on a regular basis: regularly
+  at the present time: now
+  in close proximity to: near
+  has the ability to: can
+  is able to: can
+  make a decision: decide
+  make a determination: determine
+  give consideration to: consider
+  take into consideration: consider
+  a large number of: many
+  a small number of: few
+  the vast majority of: most
+  collaborate together: collaborate
+  future plans: plans
+  end result: result
