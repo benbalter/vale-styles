@@ -9,5 +9,7 @@ action:
     - replace
     - "-"
     - " "
+# Words ending in -ly that are adjectives, not adverbs, so a compound
+# modifier built on one keeps its hyphen ("family-owned", "early-stage").
 tokens:
-  - '\s[^\s-]+ly-'
+  - '\s(?!(?:family|early|daily|weekly|monthly|quarterly|yearly|hourly|nightly|friendly|elderly|costly|curly|deadly|holy|lonely|lovely|orderly|silly|timely|ugly)-)[^\s-]+ly-'

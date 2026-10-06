@@ -6,6 +6,8 @@ The city is a tapestry of cultures.
 
 The result underscores the risk.
 
+The outage underscores how fragile the setup is.
+
 She meticulously checked the logs.
 
 It was a game-changing release.
@@ -18,6 +20,6 @@ The delivery arrived early.
 
 The two realms of the game.
 
-## Known false positives
-
 Separate words with an underscore.
+
+Replace spaces with underscores.
