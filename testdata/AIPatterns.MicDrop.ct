@@ -3,3 +3,4 @@ $ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
 test.md:3:16:AIPatterns.MicDrop:'Full stop.' is a mic-drop closer. Work the point into the surrounding sentence.
 test.md:5:26:AIPatterns.MicDrop:'And it shows.' is a mic-drop closer. Work the point into the surrounding sentence.
 test.md:7:22:AIPatterns.MicDrop:'It compounds.' is a mic-drop closer. Work the point into the surrounding sentence.
+test.md:19:19:AIPatterns.MicDrop:'And that’s the point.' is a mic-drop closer. Work the point into the surrounding sentence.

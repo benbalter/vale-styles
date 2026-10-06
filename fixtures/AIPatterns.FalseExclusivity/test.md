@@ -13,3 +13,7 @@ Here's a dirty secret about knowledge work: your best idea arrives at 2 AM.
 Nobody told me about the outage.
 
 The cost of meetings is focus.
+
+## Flag with a curly apostrophe
+
+Here’s what nobody tells you about on-call.

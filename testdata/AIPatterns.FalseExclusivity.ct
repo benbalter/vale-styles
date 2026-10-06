@@ -3,3 +3,4 @@ $ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
 test.md:3:1:AIPatterns.FalseExclusivity:'Here's what nobody tells you' claims insider knowledge. State the point directly.
 test.md:5:1:AIPatterns.FalseExclusivity:'The hidden cost' claims insider knowledge. State the point directly.
 test.md:7:1:AIPatterns.FalseExclusivity:'The uncomfortable truth' claims insider knowledge. State the point directly.
+test.md:19:1:AIPatterns.FalseExclusivity:'Here’s what nobody tells you' claims insider knowledge. State the point directly.

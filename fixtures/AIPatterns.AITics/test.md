@@ -11,3 +11,7 @@ You missed the deadline, and that's okay.
 It's worth the effort.
 
 Note the cold cache.
+
+## Flag with a curly apostrophe
+
+It’s worth noting that the cache is cold.

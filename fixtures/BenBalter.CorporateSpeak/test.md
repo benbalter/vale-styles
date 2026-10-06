@@ -13,3 +13,7 @@ The trade is a win-win.
 We circled back to the start of the doc.
 
 The meeting ran to the end of the week.
+
+## Flag with a curly apostrophe
+
+Let’s touch base on Friday.

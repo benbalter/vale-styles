@@ -27,3 +27,7 @@ In Markdown, Vale doesn't lint URLs that start with a scheme, bare or linked, so
 Source: https://example.com/?utm_source=chatgpt.com
 
 Read [the post](https://example.com/?utm_source=chatgpt.com).
+
+## Flag with a curly apostrophe
+
+I don’t have access to real-time data.
