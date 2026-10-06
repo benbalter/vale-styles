@@ -1,5 +1,6 @@
 extends: existence
 message: "'%s' is a formulaic transition. Use a natural transition or restructure."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/Transitions.yml
 ignorecase: false
 nonword: true
 level: warning

@@ -1,12 +1,13 @@
 extends: existence
 message: "'%s' assumes the reader already knows this. If it's worth saying, explain it."
+link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/Assumptive.yml
 ignorecase: true
 level: warning
 tokens:
   - simply
-  - of course
+  - 'of course(?!!)'
   - needless to say
-  - it goes without saying
+  - '(?:it )?goes without saying'
   - as you know
   - as we all know
   - as everyone knows

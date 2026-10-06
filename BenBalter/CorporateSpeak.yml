@@ -1,7 +1,8 @@
 extends: existence
 message: "'%s' is corporate speak."
+link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/CorporateSpeak.yml
 ignorecase: true
-level: error
+level: warning
 tokens:
   - at the end of the day
   - back to the drawing board
@@ -18,7 +19,6 @@ tokens:
   - no brainer
   - par for the course
   - bang for your buck
-  - synergy
   - move the goal post
   - apples to apples
   - win-win
