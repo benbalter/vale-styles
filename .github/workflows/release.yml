@@ -1,8 +1,8 @@
 name: Release
 
 # Cut a release by pushing a tag: `git tag v0.0.4 && git push origin v0.0.4`.
-# This builds BenBalter.zip from the BenBalter/ directory and attaches it to the
-# release, so the zip can never drift from the tagged rules (the failure mode of
+# This builds BenBalter.zip and AIPatterns.zip from their directories and attaches
+# them to the release, so the zip can never drift from the tagged rules (the failure mode of
 # building it by hand).
 
 on:
@@ -14,20 +14,22 @@ permissions:
 
 jobs:
   release:
-    name: Build and attach BenBalter.zip
+    name: Build and attach style zips
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Build BenBalter.zip
-        run: zip -r BenBalter.zip BenBalter
+      - name: Build style zips
+        run: |
+          zip -r BenBalter.zip BenBalter
+          zip -r AIPatterns.zip AIPatterns
 
       - name: Create or update the release
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
         run: |
-          gh release create "$TAG" BenBalter.zip --title "$TAG" --generate-notes \
-            || gh release upload "$TAG" BenBalter.zip --clobber
+          gh release create "$TAG" BenBalter.zip AIPatterns.zip --title "$TAG" --generate-notes \
+            || gh release upload "$TAG" BenBalter.zip AIPatterns.zip --clobber

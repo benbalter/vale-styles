@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Smoke test: run the BenBalter style against fixtures in testdata/ and assert
+# Smoke test: run the BenBalter and AIPatterns styles against fixtures in testdata/ and assert
 # each rule fires on prose crafted to trip it. Catches broken YAML, renamed
 # rules, or regexes that silently stop matching. Not exhaustive — one positive
 # case per rule under test.
@@ -26,7 +26,7 @@ StylesPath = $(pwd)
 MinAlertLevel = suggestion
 
 [*.md]
-BasedOnStyles = BenBalter
+BasedOnStyles = BenBalter, AIPatterns
 EOF
 
 # Vale exits non-zero when it finds alerts, which is exactly what we want here,
@@ -47,16 +47,19 @@ assert_fires "BenBalter.Buzzwords"
 assert_fires "BenBalter.Assumptive"
 assert_fires "BenBalter.Cliches"
 assert_fires "BenBalter.CulturalInclusion"
+assert_fires "AIPatterns.EmDash"
+assert_fires "AIPatterns.MetaCommentary"
+assert_fires "AIPatterns.ChatbotArtifacts"
 
 # Clean fixture must trip nothing — catches rules that became overzealous
 # (false positives), the direction "does it fire?" tests miss.
 clean_out="$(vale --config="$cfg" --output=JSON testdata/clean.md || true)"
-clean_hits="$(printf '%s' "$clean_out" | grep -c '"Check":"BenBalter' || true)"
+clean_hits="$(printf '%s' "$clean_out" | grep -c -E '"Check":"(BenBalter|AIPatterns)' || true)"
 if [ "$clean_hits" -eq 0 ]; then
 	echo "ok    clean fixture trips nothing"
 else
-	echo "FAIL  clean fixture produced $clean_hits BenBalter alert(s):"
-	printf '%s\n' "$clean_out" | grep -o '"Check":"BenBalter[^"]*"'
+	echo "FAIL  clean fixture produced $clean_hits alert(s):"
+	printf '%s\n' "$clean_out" | grep -o -E '"Check":"(BenBalter|AIPatterns)[^"]*"'
 	fail=1
 fi
 

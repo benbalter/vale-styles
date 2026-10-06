@@ -11,11 +11,15 @@ Add the package to your `.vale.ini` and enable the style:
 
 ```ini
 StylesPath = .github/styles
-Packages = https://github.com/benbalter/vale-styles/releases/download/v0.0.4/BenBalter.zip
+Packages = https://github.com/benbalter/vale-styles/releases/download/v0.0.5/BenBalter.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.5/AIPatterns.zip
 
 [*.md]
-BasedOnStyles = BenBalter
+BasedOnStyles = BenBalter, AIPatterns
 ```
+
+Each release ships two styles. `BenBalter` holds the house rules below;
+`AIPatterns` flags the cadence and vocabulary of AI-drafted prose. Use either or
+both.
 
 Then `vale sync` to download it and `vale <files>` to lint. Override any rule's
 severity (or turn it off) in your own `.vale.ini` — e.g. `BenBalter.Buzzwords = error`.
@@ -37,6 +41,32 @@ severity (or turn it off) in your own `.vale.ini` — e.g. `BenBalter.Buzzwords 
 | `OxfordComma` | warning | Missing serial comma in lists of four or more. |
 | `SentanceSpacing` | error | Double spaces between sentences. |
 | `So` | error | Sentences that open with "so". |
+
+## AIPatterns rules
+
+Calibrated against pre-AI posts on ben.balter.com, so they fire on AI tells
+rather than on Ben's deliberate voice.
+
+| Rule | Level | Flags |
+| --- | --- | --- |
+| `AITics` | error | Throat-clearing ("it's worth noting that", "as previously mentioned"). |
+| `Antithesis` | suggestion | "It's not X, it's Y" constructions. |
+| `Aphorisms` | suggestion | Formulaic aphorisms in place of a concrete claim. |
+| `ChatbotArtifacts` | error | Chatbot leftovers ("I hope this helps", "Certainly!"). |
+| `EmDash` | warning | Em dashes. En dashes for ranges are fine. |
+| `Fingerprints` | error | Generation fingerprints ("as an AI language model", leaked citation markup). |
+| `Flourishes` | warning | Dramatic flourishes ("Buckle up", "Let that sink in"). |
+| `MetaCommentary` | error | "Let's dive into", "Let's explore". |
+| `PerformativeEnthusiasm` | error | "Great question!", "Excellent point!". |
+| `PlainWords` | warning | Inflated words with plain substitutes. |
+| `RhetoricalQuestions` | suggestion | Self-answered setups ("So why does this matter?"). |
+| `SetupPhrases` | warning | "When it comes to", "In today's world". |
+| `Signposts` | error | Signposts that announce a twist instead of delivering one. |
+| `ThisConstructions` | error | "This ensures", "This allows" constructions. |
+| `Transitions` | warning | "Furthermore", "Moreover", "Additionally". |
+| `VagueIntensifiers` | suggestion | "highly effective", "incredibly valuable". |
+| `Vocabulary` | warning | Words AI overuses ("delve", "tapestry", "robust"). |
+| `WeakOpenings` | suggestion | Weak sentence openers. |
 
 ## Development
 
