@@ -1,7 +1,8 @@
 extends: substitution
 message: 'Use inclusive language. Consider "%s" instead of "%s".'
+link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/CulturalInclusion.yml
 ignorecase: true
-level: error
+level: warning
 action:
   name: replace
 swap:

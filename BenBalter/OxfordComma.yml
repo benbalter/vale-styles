@@ -1,5 +1,6 @@
 extends: existence
 message: 'Use a comma before the last "and" or "or" in a list of three or more items.'
+link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/OxfordComma.yml
 level: warning
 raw:
   # Fixed pairs ("express or implied", "virtual or otherwise") aren't lists.

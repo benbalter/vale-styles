@@ -1,6 +1,7 @@
 extends: existence
-message: "Do not start a paragraph with a 'but'."
-level: error
+message: "Don't start a paragraph with '%s'."
+link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/But.yml
+level: warning
 scope: paragraph
 action:
   name: remove

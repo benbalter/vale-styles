@@ -1,5 +1,6 @@
 extends: existence
 message: "'%s' italicizes a common word for emphasis. Let the sentence carry it."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/EmphaticItalics.yml
 level: suggestion
 nonword: true
 scope: raw

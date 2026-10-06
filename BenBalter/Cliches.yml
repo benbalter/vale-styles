@@ -1,5 +1,6 @@
 extends: existence
 message: "Try to avoid using clichés like '%s'."
+link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/Cliches.yml
 ignorecase: true
 level: warning
 tokens:
@@ -39,7 +40,6 @@ tokens:
   - back against the wall
   - back in the saddle
   - back to square one
-  - back to the drawing board
   - bad to the bone
   - badge of honor
   - bald faced liar
@@ -248,7 +248,6 @@ tokens:
   - go him one better
   - go the extra mile
   - go with the flow
-  - goes without saying
   - good as gold
   - good deed for the day
   - good things come to those who wait
@@ -305,7 +304,6 @@ tokens:
   - in the thick of it
   - in your dreams
   - it ain['’]t over till the fat lady sings
-  - it goes without saying
   - it takes all kinds
   - it takes one to know one
   - it['’]s a small world
@@ -416,7 +414,6 @@ tokens:
   - naked truth
   - neat as a pin
   - needle in a haystack
-  - needless to say
   - neither here nor there
   - never look back
   - never say never
@@ -479,7 +476,6 @@ tokens:
   - pain and suffering
   - pain in the
   - panic button
-  - par for the course
   - part and parcel
   - party pooper
   - pass the buck
@@ -615,7 +611,6 @@ tokens:
   - third time['’]s the charm
   - this day and age
   - this hurts me worse than it hurts you
-  - this point in time
   - three sheets to the wind
   - through thick and thin
   - throw in the towel
