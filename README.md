@@ -31,17 +31,17 @@ severity (or turn it off) in your own `.vale.ini` — e.g. `BenBalter.Buzzwords 
 | `Assumptive` | warning | Reader-condescending throat-clearing ("simply", "of course", "needless to say"). |
 | `AvoidJargon` | warning | Jargon with a plainer substitute. |
 | `Buzzwords` | warning | Corporate buzzwords ("leverage", "synergy", "robust", "holistic") with concrete replacements. |
-| `But` | error | Paragraphs that open with "but". |
+| `But` | warning | Paragraphs that open with "but". |
 | `Cliches` | warning | Clichés ("back to the drawing board", "think outside the box"). |
-| `CorporateSpeak` | error | Corporate-speak ("synergy", "circle back"). |
-| `CulturalInclusion` | error | Non-inclusive language, with inclusive alternatives. |
-| `FillerWords` | error | Filler that adds no meaning. |
+| `CorporateSpeak` | warning | Corporate-speak ("synergy", "circle back"). |
+| `CulturalInclusion` | warning | Non-inclusive language, with inclusive alternatives. |
+| `FillerWords` | warning | Filler that adds no meaning. |
 | `HyphenatedAdverbs` | warning | Unneeded hyphens after `-ly` adverbs. |
 | `MeaningfulLinkWords` | warning | Non-descriptive link text ("click here", "this"). |
 | `OxfordComma` | warning | Missing serial comma in lists of three or more. |
 | `Redundancy` | suggestion | Wordy phrases with a shorter form ("in order to", "the vast majority of"). |
-| `SentanceSpacing` | error | Double spaces between sentences. |
-| `So` | error | Sentences that open with "so". |
+| `SentanceSpacing` | warning | Double spaces between sentences. |
+| `So` | warning | Sentences that open with "so". |
 
 ## AIPatterns rules
 

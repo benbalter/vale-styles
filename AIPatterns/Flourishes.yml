@@ -1,5 +1,6 @@
 extends: existence
 message: "'%s' is a dramatic flourish AI writing leans on. Fine if it's earned; cut it if it's filler."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/Flourishes.yml
 ignorecase: true
 level: warning
 tokens:

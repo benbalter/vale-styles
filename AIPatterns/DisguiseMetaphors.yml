@@ -1,5 +1,6 @@
 extends: existence
 message: "'%s' says one thing is another in costume. Name what it is and how it differs."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/DisguiseMetaphors.yml
 ignorecase: true
 nonword: true
 level: warning
@@ -14,7 +15,8 @@ tokens:
   - '\bpass(?:es|ed|ing)? (?:itself|themselves|it|them) off as\b'
   - '\bpassed off as\b'
   - '\bcosplay(?:s|ed|ing)? as\b'
-  - '\bin disguise\b'
+  # "Blessing in disguise" is BenBalter.Cliches'.
+  - '(?<!blessing )\bin disguise\b'
   - '\b(?:in|under) the guise of\b'
   - '\bin sheep(?:''|’)?s clothing\b'
   - '\bin a trench ?coat\b'
