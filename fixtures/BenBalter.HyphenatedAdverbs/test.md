@@ -10,6 +10,6 @@ It is a highly rated tool.
 
 That is a well-known fact.
 
-## Known false positives
-
 They run a family-owned shop.
+
+It is an early-stage startup with a daily-active-user goal.

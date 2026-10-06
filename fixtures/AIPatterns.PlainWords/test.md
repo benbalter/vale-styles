@@ -2,6 +2,10 @@
 
 We utilize caching.
 
+The service utilizes a cache.
+
+We utilized caching last year.
+
 Utilizing a cache speeds things up.
 
 Work will commence on Monday.
@@ -13,9 +17,3 @@ Ascertain the cause first.
 We use caching.
 
 Utilization rates are up.
-
-## Known misses
-
-Past tense isn't covered.
-
-We utilized caching.

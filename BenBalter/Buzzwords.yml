@@ -36,6 +36,6 @@ swap:
   supercharge: "Use 'speed up', 'improve', or describe the specific gain"
   supercharged: "Use 'sped up', 'improved', or describe the specific gain"
   unleash: "Use 'release', 'enable', or describe the effect"
-  underscore: "Use 'shows', 'emphasizes', or state the point directly"
-  underscores: "Use 'shows', 'emphasizes', or states the point directly"
+  underscore(?= (?:the|a|an|how|why|what|that|this|these|its|their|our|his|her)): "Use 'shows', 'emphasizes', or state the point directly"
+  underscores(?= (?:the|a|an|how|why|what|that|this|these|its|their|our|his|her)): "Use 'shows', 'emphasizes', or states the point directly"
   navigate the complexities: "Describe the specific difficulty"
