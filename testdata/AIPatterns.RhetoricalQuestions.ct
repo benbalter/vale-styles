@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/AIPatterns.RhetoricalQuestions
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:1:AIPatterns.RhetoricalQuestions:Avoid formulaic rhetorical questions like 'So why does this matter?'. Trust the reader to draw conclusions.
+test.md:5:1:AIPatterns.RhetoricalQuestions:Avoid formulaic rhetorical questions like 'What does this look like in practice?'. Trust the reader to draw conclusions.
+test.md:7:1:AIPatterns.RhetoricalQuestions:Avoid formulaic rhetorical questions like 'So how do we'. Trust the reader to draw conclusions.

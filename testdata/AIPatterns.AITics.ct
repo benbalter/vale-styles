@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/AIPatterns.AITics
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:1:AIPatterns.AITics:'It's worth noting that' is an AI-like writing pattern. State the point directly.
+test.md:5:1:AIPatterns.AITics:'As previously mentioned' is an AI-like writing pattern. State the point directly.
+test.md:7:26:AIPatterns.AITics:'and that's okay' is an AI-like writing pattern. State the point directly.

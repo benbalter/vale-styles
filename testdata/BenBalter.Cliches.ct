@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/BenBalter.Cliches
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:23:BenBalter.Cliches:Try to avoid using clichés like 'eleventh hour'.
+test.md:5:20:BenBalter.Cliches:Try to avoid using clichés like 'dime a dozen'.
+test.md:7:1:BenBalter.Cliches:Try to avoid using clichés like 'In a nutshell'.

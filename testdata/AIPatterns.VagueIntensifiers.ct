@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/AIPatterns.VagueIntensifiers
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:9:AIPatterns.VagueIntensifiers:'truly unique' is a vague intensifier. Be specific or provide evidence.
+test.md:5:13:AIPatterns.VagueIntensifiers:'highly effective' is a vague intensifier. Be specific or provide evidence.
+test.md:7:13:AIPatterns.VagueIntensifiers:'incredibly valuable' is a vague intensifier. Be specific or provide evidence.

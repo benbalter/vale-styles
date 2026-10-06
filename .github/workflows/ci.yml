@@ -14,12 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      VALE_VERSION: 3.17.1
+      # renovate: datasource=github-releases depName=errata-ai/vale extractVersion=^v(?<version>.*)$
+      VALE_VERSION: 3.24.0
     steps:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Lint YAML
+      - name: Set up Go
+        uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+
+      - name: Lint
         run: |
           python3 -m pip install --quiet yamllint
           script/lint

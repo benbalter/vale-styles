@@ -71,9 +71,19 @@ rather than on Ben's deliberate voice.
 ## Development
 
 ```sh
-script/lint   # yamllint the rule files
-script/test   # assert rules fire on fixtures in testdata/ and leave clean prose alone
+script/lint          # yamllint the rule files, gofmt the test harness
+script/test          # golden-file tests for every rule (needs Go and Vale)
+script/test -update  # regenerate the expected output after an intended change
 ```
+
+Each rule has a fixture in `fixtures/<Style>.<Rule>/` that enables only that
+rule, with prose it should flag, prose it should leave alone, and any known
+false positives. `testdata/<Style>.<Rule>.ct` holds the exact Vale output
+expected for it, so a change to what a rule matches, where, or what it says
+shows up as a diff. `fixtures/clean` runs every rule against plain prose and
+must trip nothing. The harness is
+[go-cmdtest](https://github.com/google/go-cmdtest), the same one
+[errata-ai/Google](https://github.com/errata-ai/Google) uses.
 
 CI runs both on every push and pull request.
 

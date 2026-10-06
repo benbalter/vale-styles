@@ -1,0 +1,6 @@
+$ cdf ${REPO}/fixtures/AIPatterns.SetupPhrases
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:1:AIPatterns.SetupPhrases:'When it comes to' is a setup phrase. Get to the point.
+test.md:5:1:AIPatterns.SetupPhrases:'In today's' is a setup phrase. Get to the point.
+test.md:7:1:AIPatterns.SetupPhrases:'At its core' is a setup phrase. Get to the point.
+test.md:9:1:AIPatterns.SetupPhrases:'Rest assured' is a setup phrase. Get to the point.

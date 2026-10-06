@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/BenBalter.MeaningfulLinkWords
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:14:BenBalter.MeaningfulLinkWords:Improve SEO and accessibility by rewriting "[click here](" in the link text.
+test.md:5:15:BenBalter.MeaningfulLinkWords:Improve SEO and accessibility by rewriting "[here](" in the link text.
+test.md:7:1:BenBalter.MeaningfulLinkWords:Improve SEO and accessibility by rewriting "[This page](" in the link text.

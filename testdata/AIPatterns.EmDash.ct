@@ -1,0 +1,4 @@
+$ cdf ${REPO}/fixtures/AIPatterns.EmDash
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:22:AIPatterns.EmDash:Em dash (—) reads as the top AI tell. Use a comma, colon, parentheses, or split into two sentences. (En dashes for ranges are fine.)
+test.md:5:21:AIPatterns.EmDash:Em dash (—) reads as the top AI tell. Use a comma, colon, parentheses, or split into two sentences. (En dashes for ranges are fine.)

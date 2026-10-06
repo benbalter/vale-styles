@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/AIPatterns.PerformativeEnthusiasm
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:1:AIPatterns.PerformativeEnthusiasm:'Great question!' sounds like performative enthusiasm. Keep a measured, authentic tone.
+test.md:5:8:AIPatterns.PerformativeEnthusiasm:'absolutely right' sounds like performative enthusiasm. Keep a measured, authentic tone.
+test.md:7:1:AIPatterns.PerformativeEnthusiasm:'Couldn't agree more' sounds like performative enthusiasm. Keep a measured, authentic tone.
