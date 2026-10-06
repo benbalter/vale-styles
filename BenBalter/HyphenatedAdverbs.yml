@@ -9,7 +9,9 @@ action:
     - replace
     - "-"
     - " "
-# Words ending in -ly that are adjectives, not adverbs, so a compound
-# modifier built on one keeps its hyphen ("family-owned", "early-stage").
+# Words ending in -ly that are adjectives ("family-owned", "early-stage") or
+# nouns ("fly-fishing", "assembly-line"), not adverbs, so a compound built on
+# one keeps its hyphen. The lookbehind replaces a leading \s so the word still
+# matches after punctuation ("(early-stage", "*early-stage*").
 tokens:
-  - '\s(?!(?:family|early|daily|weekly|monthly|quarterly|yearly|hourly|nightly|friendly|elderly|costly|curly|deadly|holy|lonely|lovely|orderly|silly|timely|ugly)-)[^\s-]+ly-'
+  - '(?<![\w-])(?!(?i:family|early|daily|weekly|monthly|quarterly|yearly|hourly|nightly|friendly|elderly|costly|curly|deadly|holy|lonely|lovely|orderly|silly|timely|ugly|fly|assembly|supply|ally|rally|reply|belly|bully|jelly|holly|lily|italy|july)-)\w+ly-'

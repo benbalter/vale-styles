@@ -3,3 +3,4 @@ $ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
 test.md:3:1:AIPatterns.LabelAndExplain:'The real problem:' sets up a label-and-colon reveal. Fold the label into a real sentence.
 test.md:5:1:AIPatterns.LabelAndExplain:'The catch:' sets up a label-and-colon reveal. Fold the label into a real sentence.
 test.md:7:1:AIPatterns.LabelAndExplain:'The takeaway:' sets up a label-and-colon reveal. Fold the label into a real sentence.
+test.md:19:1:AIPatterns.LabelAndExplain:'The team’s real problem:' sets up a label-and-colon reveal. Fold the label into a real sentence.

@@ -9,7 +9,7 @@ tokens:
   - 'as of my last training'
   - 'my knowledge cutoff'
   - 'my last knowledge update'
-  - "I don't have access to real-time"
+  - "I don['’]t have access to real-time"
   - 'I do not have access to real-time'
   - 'as an AI language model'
   - 'as a large language model'

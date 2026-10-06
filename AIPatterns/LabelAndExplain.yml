@@ -11,6 +11,6 @@ tokens:
   # A determiner-led noun-phrase label, a colon, then a lowercase clause of
   # 20+ characters. The lookahead keeps the clause out of the match; the
   # lookbehind skips clause labels ("The options are available: ...").
-  - "\\b(?:The|A|An|One|Our|Their|Its) (?:[a-z][a-z'-]* ){0,3}[a-z][a-z'-]*(?<! (?:is|are|was|were|be|been|being) [a-z][a-z'-]{0,20}):(?= [a-z][^.!?:]{20,}[.!?])"
+  - "\\b(?:The|A|An|One|Our|Their|Its) (?:[a-z][a-z'’-]* ){0,3}[a-z][a-z'’-]*(?<! (?:is|are|was|were|be|been|being) [a-z][a-z'’-]{0,20}):(?= [a-z][^.!?:]{20,}[.!?])"
   # Dramatic labels that read as a tell whatever follows.
   - "\\bThe (?:catch|kicker|upshot|tradeoff|trade-off|trick|downside|flip side|bottom line|takeaway|lesson|moral|payoff|pitch):"

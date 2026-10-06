@@ -11,3 +11,7 @@ That's where caching comes in.
 It's not ready yet.
 
 The build is fast, and it runs the tests.
+
+## Flag with a curly apostrophe
+
+That’s where caching comes in.

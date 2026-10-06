@@ -13,3 +13,7 @@ The billing period ends Friday.
 It matters which team owns the service.
 
 Not much changed after the launch.
+
+## Flag with a curly apostrophe
+
+We wrote it down. And that’s the point.

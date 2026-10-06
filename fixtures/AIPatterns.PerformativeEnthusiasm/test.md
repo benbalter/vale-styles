@@ -11,3 +11,7 @@ Couldn't agree more.
 That was a great question to ask.
 
 The cache is right.
+
+## Flag with a curly apostrophe
+
+Couldn’t agree more.

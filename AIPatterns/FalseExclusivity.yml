@@ -10,7 +10,7 @@ tokens:
   - (?:nobody|no one) talks about
   - (?:nobody|no one) (?:mentions|discusses)
   - the part (?:nobody|no one) (?:mentions|talks about)
-  - (?:here's )?what (?:nobody|no one) tells you
+  - (?:here['’]s )?what (?:nobody|no one) tells you
   - what most people (?:miss|overlook|forget)
   - the (?:uncomfortable|inconvenient|unspoken|hidden) truth
   - the unspoken reality

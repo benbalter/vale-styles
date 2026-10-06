@@ -4,3 +4,4 @@ test.md:3:7:BenBalter.CorporateSpeak:'circle back around' is corporate speak.
 test.md:5:13:BenBalter.CorporateSpeak:'low-hanging fruit' is corporate speak.
 test.md:7:1:BenBalter.CorporateSpeak:'At the end of the day' is corporate speak.
 test.md:9:16:BenBalter.CorporateSpeak:'win-win' is corporate speak.
+test.md:19:1:BenBalter.CorporateSpeak:'Let’s touch base' is corporate speak.

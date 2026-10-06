@@ -3,3 +3,4 @@ $ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
 test.md:3:1:AIPatterns.Antithesis:'It's not about speed - it's' is the AI negation-antithesis construction. Keep only if the contrast is earned; otherwise state the point directly.
 test.md:5:1:AIPatterns.Antithesis:'Not only does it build fast, but it also ' is the AI negation-antithesis construction. Keep only if the contrast is earned; otherwise state the point directly.
 test.md:7:1:AIPatterns.Antithesis:'That's where caching comes in' is the AI negation-antithesis construction. Keep only if the contrast is earned; otherwise state the point directly.
+test.md:17:1:AIPatterns.Antithesis:'That’s where caching comes in' is the AI negation-antithesis construction. Keep only if the contrast is earned; otherwise state the point directly.
