@@ -3,3 +3,4 @@ $ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
 test.md:3:1:AIPatterns.MetaCommentary:Avoid meta-commentary like 'Let's dive into'. Just do it directly.
 test.md:5:1:AIPatterns.MetaCommentary:Avoid meta-commentary like 'Let us explore'. Just do it directly.
 test.md:7:1:AIPatterns.MetaCommentary:Avoid meta-commentary like 'Let's break down'. Just do it directly.
+test.md:17:1:AIPatterns.MetaCommentary:Avoid meta-commentary like 'Let’s dive into'. Just do it directly.

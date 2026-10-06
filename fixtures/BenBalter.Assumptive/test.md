@@ -17,3 +17,7 @@ It's clear that the queue is full.
 The design is simple, and the new flag will simplify setup.
 
 The course of the river changed.
+
+## Flag with a curly apostrophe
+
+It’s clear that the queue is full.

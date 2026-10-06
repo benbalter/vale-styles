@@ -2,4 +2,5 @@ extends: existence
 message: 'Use a comma before the last "and" or "or" in a list of three or more items.'
 level: warning
 raw:
-  - '(?:[^\s,]+,){1,} \w+ (?:and|or) \w+[.?!]'
+  # Fixed pairs ("express or implied", "virtual or otherwise") aren't lists.
+  - '(?:[^\s,]+,){1,} (?!express or implied\b)\w+ (?:and|or) (?!otherwise\b)\w+[.?!]'

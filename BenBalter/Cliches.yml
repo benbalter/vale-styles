@@ -18,12 +18,12 @@ tokens:
   - against all odds
   - air your dirty laundry
   - all fun and games
-  - all in a day's work
+  - all in a day['’]s work
   - all talk, no action
   - all thumbs
   - all your eggs in one basket
-  - all's fair in love and war
-  - all's well that ends well
+  - all['’]s fair in love and war
+  - all['’]s well that ends well
   - almighty dollar
   - American as apple pie
   - an axe to grind
@@ -52,7 +52,7 @@ tokens:
   - beat a dead horse
   - beat around the bush
   - been there, done that
-  - beggars can't be choosers
+  - beggars can['’]t be choosers
   - behind the eight ball
   - bend over backwards
   - benefit of the doubt
@@ -72,7 +72,7 @@ tokens:
   - big man on campus
   - bigger they are the harder they fall
   - bird in the hand
-  - bird's eye view
+  - bird['’]s eye view
   - birds and the bees
   - birds of a feather flock together
   - bit the hand that feeds you
@@ -118,11 +118,11 @@ tokens:
   - called onto the carpet
   - calm before the storm
   - can of worms
-  - can't cut the mustard
-  - can't hold a candle to
+  - can['’]t cut the mustard
+  - can['’]t hold a candle to
   - case of mistaken identity
   - cat got your tongue
-  - cat's meow
+  - cat['’]s meow
   - caught in the crossfire
   - caught red-handed
   - checkered past
@@ -136,7 +136,7 @@ tokens:
   - come hell or high water
   - cool as a cucumber
   - cool, calm, and collected
-  - cost a king's ransom
+  - cost a king['’]s ransom
   - count your blessings
   - crack of dawn
   - crash course
@@ -165,12 +165,12 @@ tokens:
   - dog days
   - dog eat dog
   - dog tired
-  - don't burn your bridges
-  - don't count your chickens
-  - don't look a gift horse in the mouth
-  - don't rock the boat
-  - don't step on anyone's toes
-  - don't take any wooden nickels
+  - don['’]t burn your bridges
+  - don['’]t count your chickens
+  - don['’]t look a gift horse in the mouth
+  - don['’]t rock the boat
+  - don['’]t step on anyone['’]s toes
+  - don['’]t take any wooden nickels
   - down and out
   - down at the heels
   - down in the dumps
@@ -221,7 +221,7 @@ tokens:
   - follow your heart
   - for all intents and purposes
   - for the birds
-  - for what it's worth
+  - for what it['’]s worth
   - force of nature
   - force to be reckoned with
   - forgive and forget
@@ -264,16 +264,16 @@ tokens:
   - hand to mouth
   - happy as a clam
   - happy as a lark
-  - hasn't a clue
+  - hasn['’]t a clue
   - have a nice day
   - have high hopes
   - have the last laugh
-  - haven't got a row to hoe
+  - haven['’]t got a row to hoe
   - head honcho
   - head over heels
   - hear a pin drop
   - heard it through the grapevine
-  - heart's content
+  - heart['’]s content
   - heavy as lead
   - hem and haw
   - high and dry
@@ -296,7 +296,7 @@ tokens:
   - in a jam
   - in a jiffy
   - in a nutshell
-  - in a pig's eye
+  - in a pig['’]s eye
   - in a pinch
   - in a word
   - in hot water
@@ -304,12 +304,12 @@ tokens:
   - in the nick of time
   - in the thick of it
   - in your dreams
-  - it ain't over till the fat lady sings
+  - it ain['’]t over till the fat lady sings
   - it goes without saying
   - it takes all kinds
   - it takes one to know one
-  - it's a small world
-  - it's only a matter of time
+  - it['’]s a small world
+  - it['’]s only a matter of time
   - ivory tower
   - Jack of all trades
   - jockey for position
@@ -361,20 +361,20 @@ tokens:
   - let the cat out of the bag
   - let the good times roll
   - let your hair down
-  - let's talk turkey
+  - let['’]s talk turkey
   - letter perfect
   - lick your wounds
   - lies like a rug
-  - life's a bitch
-  - life's a grind
+  - life['’]s a bitch
+  - life['’]s a grind
   - light at the end of the tunnel
   - lighter than a feather
   - lighter than air
   - like clockwork
   - like father like son
   - like taking candy from a baby
-  - like there's no tomorrow
-  - lion's share
+  - like there['’]s no tomorrow
+  - lion['’]s share
   - live and learn
   - live and let live
   - long and short of it
@@ -400,7 +400,7 @@ tokens:
   - make the best of it
   - make your blood boil
   - man of few words
-  - man's best friend
+  - man['’]s best friend
   - mark my words
   - meaningful dialogue
   - missed the boat on that one
@@ -431,14 +431,14 @@ tokens:
   - no use crying over spilled milk
   - nose to the grindstone
   - not a hope in hell
-  - not a minute's peace
+  - not a minute['’]s peace
   - not in my backyard
   - not playing with a full deck
   - not the end of the world
   - not written in stone
   - nothing to sneeze at
   - nothing ventured nothing gained
-  - now we're cooking
+  - now we['’]re cooking
   - off the top of my head
   - off the wagon
   - off the wall
@@ -458,7 +458,7 @@ tokens:
   - on the wagon
   - on thin ice
   - once bitten, twice shy
-  - one bad apple doesn't spoil the bushel
+  - one bad apple doesn['’]t spoil the bushel
   - one born every minute
   - one brick short
   - one foot in the grave
@@ -468,7 +468,7 @@ tokens:
   - open a can of worms
   - open and shut case
   - open the flood gates
-  - opportunity doesn't knock twice
+  - opportunity doesn['’]t knock twice
   - out of pocket
   - out of sight, out of mind
   - out of the frying pan into the fire
@@ -568,7 +568,7 @@ tokens:
   - slippery as an eel
   - slow as molasses
   - smart as a whip
-  - smooth as a baby's bottom
+  - smooth as a baby['’]s bottom
   - sneaking suspicion
   - snug as a bug in a rug
   - sow wild oats
@@ -588,7 +588,7 @@ tokens:
   - stitch in time
   - stop and smell the roses
   - straight as an arrow
-  - straw that broke the camel's back
+  - straw that broke the camel['’]s back
   - strong as an ox
   - stubborn as a mule
   - stuff that dreams are made of
@@ -612,7 +612,7 @@ tokens:
   - thick as thieves
   - thin as a rail
   - think outside of the box
-  - third time's the charm
+  - third time['’]s the charm
   - this day and age
   - this hurts me worse than it hurts you
   - this point in time
@@ -661,7 +661,7 @@ tokens:
   - waiting for the other shoe to drop
   - wakeup call
   - warm welcome
-  - watch your p's and q's
+  - watch your p['’]s and q['’]s
   - watch your tongue
   - watching the clock
   - water under the bridge
@@ -674,7 +674,7 @@ tokens:
   - what you see is what you get
   - when it rains, it pours
   - when push comes to shove
-  - when the cat's away
+  - when the cat['’]s away
   - when the going gets tough, the tough get going
   - white as a sheet
   - whole ball of wax
@@ -695,8 +695,8 @@ tokens:
   - yappy as a dog
   - years young
   - you are what you eat
-  - you can run but you can't hide
+  - you can run but you can['’]t hide
   - you only live once
-  - you're the boss
+  - you['’]re the boss
   - young and foolish
   - young and vibrant

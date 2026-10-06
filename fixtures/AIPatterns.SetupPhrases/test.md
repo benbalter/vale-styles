@@ -13,3 +13,7 @@ Rest assured, the data is safe.
 Come to the meeting.
 
 The terms of service changed.
+
+## Flag with a curly apostrophe
+
+In today’s market, speed wins.

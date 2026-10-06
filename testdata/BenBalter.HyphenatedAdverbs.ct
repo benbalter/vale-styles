@@ -1,4 +1,5 @@
 $ cdf ${REPO}/fixtures/BenBalter.HyphenatedAdverbs
 $ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
-test.md:3:8:BenBalter.HyphenatedAdverbs:' highly-' doesn't need a hyphen.
-test.md:5:15:BenBalter.HyphenatedAdverbs:' poorly-' doesn't need a hyphen.
+test.md:3:9:BenBalter.HyphenatedAdverbs:'highly-' doesn't need a hyphen.
+test.md:5:16:BenBalter.HyphenatedAdverbs:'poorly-' doesn't need a hyphen.
+test.md:7:1:BenBalter.HyphenatedAdverbs:'Highly-' doesn't need a hyphen.

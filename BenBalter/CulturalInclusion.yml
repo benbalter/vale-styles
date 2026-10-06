@@ -13,7 +13,10 @@ swap:
   brown bag session: lunch and learn
   redline(?:ing)?: markup
   rule of thumb: standard, principle
-  master: primary, main
+  # The branch or replication sense only, so the verb ("teams that master
+  # async") and "master's degree" stay quiet.
+  'master(?=[ /-](?:branch|node|copy|database|db|server|list|repo|repository|slave|replica|key)\b)': primary, main
+  '(?<=\b(?:to|into|from|onto|off) )master(?=[.,;:)!?]|$)': primary, main
   slave: replica
   dummy: placeholder
   backlog grooming: backlog refinement

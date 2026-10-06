@@ -4,5 +4,6 @@ test.md:3:21:BenBalter.CulturalInclusion:Use inclusive language. Consider 'allow
 test.md:5:17:BenBalter.CulturalInclusion:Use inclusive language. Consider 'denylist' instead of "blacklisted".
 test.md:7:7:BenBalter.CulturalInclusion:Use inclusive language. Consider 'quick check, spot-check' instead of "sanity check".
 test.md:9:17:BenBalter.CulturalInclusion:Use inclusive language. Consider 'primary, main' instead of "master".
-test.md:11:7:BenBalter.CulturalInclusion:Use inclusive language. Consider 'placeholder' instead of "dummy".
-test.md:13:1:BenBalter.CulturalInclusion:Use inclusive language. Consider 'hey folks, hey everyone' instead of "Hey guys".
+test.md:11:12:BenBalter.CulturalInclusion:Use inclusive language. Consider 'primary, main' instead of "master".
+test.md:13:7:BenBalter.CulturalInclusion:Use inclusive language. Consider 'placeholder' instead of "dummy".
+test.md:15:1:BenBalter.CulturalInclusion:Use inclusive language. Consider 'hey folks, hey everyone' instead of "Hey guys".

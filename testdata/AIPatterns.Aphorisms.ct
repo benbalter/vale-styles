@@ -3,3 +3,4 @@ $ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
 test.md:3:6:AIPatterns.Aphorisms:'is the lifeblood of' is a formulaic AI construction. Make a concrete claim instead.
 test.md:5:1:AIPatterns.Aphorisms:'Make no mistake' is a formulaic AI construction. Make a concrete claim instead.
 test.md:7:1:AIPatterns.Aphorisms:'Picture this' is a formulaic AI construction. Make a concrete claim instead.
+test.md:19:1:AIPatterns.Aphorisms:'Let’s be clear' is a formulaic AI construction. Make a concrete claim instead.

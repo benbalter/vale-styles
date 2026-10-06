@@ -11,3 +11,7 @@ In a nutshell, the cache was cold.
 The squirrel cracked the nutshell open.
 
 The eleventh release shipped on time.
+
+## Flag with a curly apostrophe
+
+Fixing the build was all in a day’s work.

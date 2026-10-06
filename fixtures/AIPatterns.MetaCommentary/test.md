@@ -11,3 +11,7 @@ Let's break down the cost.
 Let's ship it.
 
 The team will explore the options.
+
+## Flag with a curly apostrophe
+
+Let’s dive into the logs.
