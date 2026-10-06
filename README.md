@@ -38,7 +38,7 @@ severity (or turn it off) in your own `.vale.ini` — e.g. `BenBalter.Buzzwords 
 | `FillerWords` | error | Filler that adds no meaning. |
 | `HyphenatedAdverbs` | warning | Unneeded hyphens after `-ly` adverbs. |
 | `MeaningfulLinkWords` | warning | Non-descriptive link text ("click here", "this"). |
-| `OxfordComma` | warning | Missing serial comma in lists of four or more. |
+| `OxfordComma` | warning | Missing serial comma in lists of three or more. |
 | `Redundancy` | suggestion | Wordy phrases with a shorter form ("in order to", "the vast majority of"). |
 | `SentanceSpacing` | error | Double spaces between sentences. |
 | `So` | error | Sentences that open with "so". |
