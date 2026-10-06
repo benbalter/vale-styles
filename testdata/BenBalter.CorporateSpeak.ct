@@ -1,7 +1,11 @@
 $ cdf ${REPO}/fixtures/BenBalter.CorporateSpeak
 $ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
-test.md:3:7:BenBalter.CorporateSpeak:'circle back around' is corporate speak.
+test.md:3:7:BenBalter.CorporateSpeak:'circle back' is corporate speak.
 test.md:5:13:BenBalter.CorporateSpeak:'low-hanging fruit' is corporate speak.
 test.md:7:1:BenBalter.CorporateSpeak:'At the end of the day' is corporate speak.
 test.md:9:16:BenBalter.CorporateSpeak:'win-win' is corporate speak.
-test.md:19:1:BenBalter.CorporateSpeak:'Let’s touch base' is corporate speak.
+test.md:11:7:BenBalter.CorporateSpeak:'touch base' is corporate speak.
+test.md:11:32:BenBalter.CorporateSpeak:'circle back' is corporate speak.
+test.md:13:4:BenBalter.CorporateSpeak:'dropped the ball' is corporate speak.
+test.md:15:9:BenBalter.CorporateSpeak:'loop me in' is corporate speak.
+test.md:27:7:BenBalter.CorporateSpeak:'touch base' is corporate speak.
