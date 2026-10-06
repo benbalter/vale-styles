@@ -1,0 +1,8 @@
+$ cdf ${REPO}/fixtures/BenBalter.Assumptive
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:1:BenBalter.Assumptive:'Simply' assumes the reader already knows this. If it's worth saying, explain it.
+test.md:5:1:BenBalter.Assumptive:'Of course' assumes the reader already knows this. If it's worth saying, explain it.
+test.md:7:1:BenBalter.Assumptive:'Needless to say' assumes the reader already knows this. If it's worth saying, explain it.
+test.md:9:1:BenBalter.Assumptive:'It goes without saying' assumes the reader already knows this. If it's worth saying, explain it.
+test.md:11:1:BenBalter.Assumptive:'As you know' assumes the reader already knows this. If it's worth saying, explain it.
+test.md:13:1:BenBalter.Assumptive:'It's clear that' assumes the reader already knows this. If it's worth saying, explain it.

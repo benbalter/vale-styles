@@ -1,0 +1,7 @@
+$ cdf ${REPO}/fixtures/BenBalter.Buzzwords
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:4:BenBalter.Buzzwords:Avoid the buzzword 'leverage'. Use 'use', 'apply', or 'build on'
+test.md:5:17:BenBalter.Buzzwords:Avoid the buzzword 'seamless'. Use 'smooth' or 'integrated'
+test.md:7:9:BenBalter.Buzzwords:Avoid the buzzword 'robust'. Use 'reliable', 'well-tested', or be specific
+test.md:9:11:BenBalter.Buzzwords:Avoid the buzzword 'game-changer'. Describe the specific impact or benefit
+test.md:11:24:BenBalter.Buzzwords:Avoid the buzzword 'north star'. Use 'guiding goal', 'primary objective', or name it

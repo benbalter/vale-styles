@@ -1,0 +1,6 @@
+$ cdf ${REPO}/fixtures/AIPatterns.PlainWords
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:4:AIPatterns.PlainWords:Use 'use' instead of 'utilize'.
+test.md:5:1:AIPatterns.PlainWords:Use 'use' instead of 'Utilizing'.
+test.md:7:11:AIPatterns.PlainWords:Use 'begin' instead of 'commence'.
+test.md:9:1:AIPatterns.PlainWords:Use 'find out' instead of 'Ascertain'.

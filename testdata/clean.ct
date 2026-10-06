@@ -1,0 +1,2 @@
+$ cdf ${REPO}/fixtures/clean
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md

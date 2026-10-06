@@ -4,8 +4,8 @@ Two [Vale](https://vale.sh) style packages, one YAML rule per file: the house ru
 
 ## Commands
 
-- `script/lint && script/test` is what CI runs: yamllint on the rules, then Vale against [`testdata/`](testdata/). Both need `yamllint` and `vale` on `PATH`.
-- `script/test` asserts that a few rules fire on their fixtures and that [`testdata/clean.md`](testdata/clean.md) trips no rule at all. When you add or tighten a rule, add a fixture that trips it plus an `assert_fires` line, and keep `clean.md` clean.
+- `script/lint && script/test` is what CI runs: yamllint and gofmt, then [go-cmdtest](https://github.com/google/go-cmdtest) golden-file tests ([`main_test.go`](main_test.go)). They need `yamllint`, `go`, and `vale` on `PATH`. Keep the local Vale version in step with `VALE_VERSION` in [`ci.yml`](.github/workflows/ci.yml), since output can change between releases.
+- Every rule needs a [`fixtures/<Style>.<Rule>/`](fixtures/) (a `.vale.ini` enabling only that rule, plus a `test.md` with `## Flag`, `## Leave alone`, and any `## Known false positives` or `## Known misses`) and a matching [`testdata/<Style>.<Rule>.ct`](testdata/) case; `TestEveryRuleHasACase` fails otherwise. After changing a rule or fixture, run `script/test -update` and review the `.ct` diff line by line before committing: it's the record of exactly what each rule flags. [`fixtures/clean`](fixtures/clean/) runs every rule at once and must stay empty.
 
 ## Releasing
 
