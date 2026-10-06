@@ -1,0 +1,7 @@
+extends: existence
+message: "'%s' reads differently across regions. Write the month name, e.g. 'June 5, 2026'."
+link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/NumericDates.yml
+level: suggestion
+nonword: true
+tokens:
+  - '\b(?:0?[1-9]|1[0-2])/(?:0?[1-9]|[12]\d|3[01])/(?:\d{2}|\d{4})\b'

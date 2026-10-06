@@ -1,0 +1,3 @@
+$ cdf ${REPO}/fixtures/AIPatterns.EmDashDensity
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:22:AIPatterns.EmDashDensity:Three or more em dashes in one paragraph. Recast some as commas, parentheses, or new sentences.

@@ -12,6 +12,10 @@ Two [Vale](https://vale.sh) style packages, one YAML rule per file: the house ru
   - Levels: `error` is for near-zero-false-positive AI tells; house style is `warning`; judgment calls are `suggestion`.
   - Tokens with an apostrophe use `['’]`, so curly quotes match too. Inside a character class, write `'’` (not `['’]`).
 
+## Calibrating a rule
+
+Before adding or broadening a rule, run [`script/calibrate`](script/calibrate) (source in [`cmd/calibrate`](cmd/calibrate/main.go)) over Ben's posts, e.g. `script/calibrate -rules AIPatterns.MicDrop ~/projects/benbalter.github.com/src/content/posts`. It splits files by their `YYYY-MM` prefix at ChatGPT's release and reports hits per 1,000 words for each era. An AI-tell rule ships only if it's at or below about 0.05 before and rises after; a rule that's flat across eras is flagging Ben's voice, so cut it or make it a suggestion. The corpus stays outside this repo.
+
 ## Releasing
 
 Pushing a `v*` tag runs [`release.yml`](.github/workflows/release.yml), which zips `BenBalter/` and `AIPatterns/` and publishes the release. Consumers only get changes when they bump the version in their `Packages` URL. Tag only after the owner's explicit go-ahead, and bump the version in the README's usage example in the same change. Push branches with `--no-follow-tags`.

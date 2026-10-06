@@ -1,0 +1,27 @@
+extends: substitution
+message: "Use '%s' instead of '%s'."
+link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/Terms.yml
+level: warning
+ignorecase: false
+# Product names, spelled the way their owners do. Wrong-case forms only, so
+# code, URLs, and domains (github.com) stay quiet.
+swap:
+  Github: GitHub
+  Javascript: JavaScript
+  Typescript: TypeScript
+  Wordpress: WordPress
+  Youtube: YouTube
+  Linkedin: LinkedIn
+  Powerpoint: PowerPoint
+  Paypal: PayPal
+  Macos: macOS
+  MacOS: macOS
+  Iphone: iPhone
+  Ios: iOS
+  Gitlab: GitLab
+  Devops: DevOps
+  Graphql: GraphQL
+  Postgresql: PostgreSQL
+  Mysql: MySQL
+  Nodejs: Node.js
+  Node.JS: Node.js
