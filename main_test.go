@@ -83,8 +83,22 @@ func TestEveryRuleHasACase(t *testing.T) {
 	}
 	for _, c := range cases {
 		name := strings.TrimSuffix(filepath.Base(c), ".ct")
-		if name != "clean" && !rules[name] {
+		if name == "clean" {
+			continue
+		}
+		if !rules[name] {
 			t.Errorf("%s doesn't match any rule", c)
+			continue
+		}
+
+		// A rule whose regex silently stopped matching would regenerate to
+		// an empty case with -update, so require at least one alert.
+		data, err := os.ReadFile(c)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if !strings.Contains(string(data), ":"+name+":") {
+			t.Errorf("%s expects no alerts; its fixture should trip %s at least once", c, name)
 		}
 	}
 }

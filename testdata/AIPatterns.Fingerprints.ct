@@ -5,3 +5,4 @@ test.md:5:9:AIPatterns.Fingerprints:'[Your Name]' is an AI-generation fingerprin
 test.md:7:19:AIPatterns.Fingerprints:'2026-XX-XX' is an AI-generation fingerprint. Remove it before publishing.
 test.md:9:20:AIPatterns.Fingerprints:'oaicite:' is an AI-generation fingerprint. Remove it before publishing.
 test.md:11:28:AIPatterns.Fingerprints:'[cite: 12]' is an AI-generation fingerprint. Remove it before publishing.
+test.md:13:20:AIPatterns.Fingerprints:'utm_source=chatgpt.com' is an AI-generation fingerprint. Remove it before publishing.
