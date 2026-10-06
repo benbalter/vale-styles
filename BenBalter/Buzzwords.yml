@@ -1,5 +1,5 @@
 extends: substitution
-message: "Avoid the buzzword '%s'. %s"
+message: "Avoid the buzzword '%[2]s'. %[1]s"
 ignorecase: true
 level: warning
 swap:
