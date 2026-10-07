@@ -11,7 +11,7 @@ Add the package to your `.vale.ini` and enable the style:
 
 ```ini
 StylesPath = .github/styles
-Packages = https://github.com/benbalter/vale-styles/releases/download/v0.0.6/BenBalter.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.6/AIPatterns.zip
+Packages = https://github.com/benbalter/vale-styles/releases/download/v0.0.7/BenBalter.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.7/AIPatterns.zip
 
 [*.md]
 BasedOnStyles = BenBalter, AIPatterns
