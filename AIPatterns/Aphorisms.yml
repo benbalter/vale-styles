@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a formulaic AI construction. Make a concrete claim instead."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/Aphorisms.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/Aphorisms.yml
 ignorecase: true
 level: suggestion
 # Suggestion-tier: near-zero on the existing corpus, but Ben uses "imagine if"

@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' reads differently across regions. Write the month name, e.g. 'June 5, 2026'."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/NumericDates.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/NumericDates.yml
 level: suggestion
 nonword: true
 tokens:

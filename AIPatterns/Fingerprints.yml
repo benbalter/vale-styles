@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is an AI-generation fingerprint. Remove it before publishing."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/Fingerprints.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/Fingerprints.yml
 ignorecase: true
 nonword: true
 level: error

@@ -71,7 +71,7 @@ func TestRuleMetadata(t *testing.T) {
 			t.Errorf("%s: level %q isn't suggestion, warning, or error", r.ID, r.Level)
 		}
 		style, name, _ := strings.Cut(r.ID, ".")
-		want := "https://github.com/benbalter/vale-styles/blob/master/" + style + "/" + name + ".yml"
+		want := "https://github.com/benbalter/vale-styles/blob/main/" + style + "/" + name + ".yml"
 		if r.Link != want {
 			t.Errorf("%s: link is %q, want %q", r.ID, r.Link, want)
 		}

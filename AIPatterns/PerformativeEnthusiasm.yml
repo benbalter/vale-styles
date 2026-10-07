@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' sounds like performative enthusiasm. Keep a measured, authentic tone."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/PerformativeEnthusiasm.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/PerformativeEnthusiasm.yml
 ignorecase: true
 nonword: true
 level: error

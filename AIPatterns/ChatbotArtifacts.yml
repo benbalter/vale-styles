@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a chatbot artifact that leaked from an AI draft. Cut it."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/ChatbotArtifacts.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/ChatbotArtifacts.yml
 ignorecase: true
 nonword: true
 level: error

@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a setup phrase. Get to the point."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/SetupPhrases.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/SetupPhrases.yml
 ignorecase: true
 level: warning
 tokens:

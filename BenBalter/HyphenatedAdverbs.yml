@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' doesn't need a hyphen."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/HyphenatedAdverbs.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/HyphenatedAdverbs.yml
 level: warning
 ignorecase: false
 nonword: true

@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is filler. Cut it and state the point."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/FillerWords.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/FillerWords.yml
 ignorecase: true
 level: warning
 action:

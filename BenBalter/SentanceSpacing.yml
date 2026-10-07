@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' should have one space."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/SentanceSpacing.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/SentanceSpacing.yml
 level: warning
 nonword: true
 tokens:

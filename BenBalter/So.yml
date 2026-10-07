@@ -1,6 +1,6 @@
 extends: existence
 message: "Don't start a sentence with '%s'."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/So.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/So.yml
 level: warning
 raw:
   - '(?:[;-]\s)so[\s,]|\bSo[\s,]'

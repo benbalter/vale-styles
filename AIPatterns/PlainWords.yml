@@ -1,6 +1,6 @@
 extends: substitution
 message: "Use '%s' instead of '%s'."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/PlainWords.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/PlainWords.yml
 ignorecase: true
 level: warning
 # True 1:1 swaps AI reaches for. Kept separate from Vocabulary.yml so Vale can

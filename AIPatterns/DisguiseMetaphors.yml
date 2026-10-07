@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' says one thing is another in costume. Name what it is and how it differs."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/DisguiseMetaphors.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/DisguiseMetaphors.yml
 ignorecase: true
 nonword: true
 level: warning

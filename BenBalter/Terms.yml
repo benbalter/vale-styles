@@ -1,6 +1,6 @@
 extends: substitution
 message: "Use '%s' instead of '%s'."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/Terms.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/Terms.yml
 level: warning
 ignorecase: false
 # Product names, spelled the way their owners do. Wrong-case forms only, so

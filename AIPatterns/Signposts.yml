@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a signpost that announces a twist instead of earning it. Cut the signpost; state the point directly."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/Signposts.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/Signposts.yml
 ignorecase: true
 level: error
 # The "here's the <abstract noun>" opener is a high-precision AI tell: it tells

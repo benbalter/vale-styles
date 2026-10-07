@@ -1,6 +1,6 @@
 extends: substitution
 message: "'%[2]s' is wordy. Use '%[1]s'."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/Redundancy.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/Redundancy.yml
 ignorecase: true
 level: suggestion
 # Moved from the book's generated Book style so the blog and book share it.

@@ -1,6 +1,6 @@
 extends: existence
 message: "Try to avoid using clichés like '%s'."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/Cliches.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/Cliches.yml
 ignorecase: true
 level: warning
 tokens:

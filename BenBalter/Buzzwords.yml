@@ -1,6 +1,6 @@
 extends: substitution
 message: "Avoid the buzzword '%[2]s'. %[1]s"
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/Buzzwords.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/Buzzwords.yml
 ignorecase: true
 level: warning
 swap:

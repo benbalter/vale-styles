@@ -1,6 +1,6 @@
 extends: existence
 message: "Avoid formulaic rhetorical questions like '%s'. Trust the reader to draw conclusions."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/RhetoricalQuestions.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/RhetoricalQuestions.yml
 ignorecase: true
 nonword: true
 level: suggestion

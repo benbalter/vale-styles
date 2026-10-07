@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a common AI writing pattern. Rephrase for a more natural voice."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/ThisConstructions.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/ThisConstructions.yml
 ignorecase: true
 level: error
 tokens:

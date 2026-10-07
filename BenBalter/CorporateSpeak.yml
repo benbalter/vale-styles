@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is corporate speak."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/CorporateSpeak.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/CorporateSpeak.yml
 ignorecase: true
 level: warning
 tokens:

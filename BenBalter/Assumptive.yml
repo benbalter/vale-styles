@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' assumes the reader already knows this. If it's worth saying, explain it."
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/Assumptive.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/Assumptive.yml
 ignorecase: true
 level: warning
 tokens:

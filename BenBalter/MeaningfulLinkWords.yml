@@ -1,6 +1,6 @@
 extends: existence
 message: 'Improve SEO and accessibility by rewriting "%s" in the link text.'
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/MeaningfulLinkWords.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/MeaningfulLinkWords.yml
 level: warning
 scope: raw
 ignorecase: true

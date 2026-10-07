@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a weak opening. Start with a stronger, more specific statement."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/WeakOpenings.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/WeakOpenings.yml
 ignorecase: true
 level: suggestion
 tokens:

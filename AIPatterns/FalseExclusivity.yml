@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' claims insider knowledge. State the point directly."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/FalseExclusivity.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/FalseExclusivity.yml
 ignorecase: true
 level: warning
 # Adapted from tbhb/vale-ai-tells (MIT, see LICENSE-vale-ai-tells). "The

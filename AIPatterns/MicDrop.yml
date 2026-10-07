@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a mic-drop closer. Work the point into the surrounding sentence."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/MicDrop.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/MicDrop.yml
 level: suggestion
 nonword: true
 # A curated subset of tbhb/vale-ai-tells MicDrop (MIT, see

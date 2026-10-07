@@ -1,6 +1,6 @@
 extends: substitution
 message: 'If possible, use "%s" instead of "%s".'
-link: https://github.com/benbalter/vale-styles/blob/master/BenBalter/AvoidJargon.yml
+link: https://github.com/benbalter/vale-styles/blob/main/BenBalter/AvoidJargon.yml
 level: warning
 ignorecase: true
 swap:

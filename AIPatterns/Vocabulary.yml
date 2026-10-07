@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a word AI overuses. Consider a plainer, more specific alternative."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/Vocabulary.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/Vocabulary.yml
 ignorecase: true
 level: warning
 # Only tells that are essentially absent from 15 years of Ben's posts live here.

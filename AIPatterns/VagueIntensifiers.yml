@@ -1,6 +1,6 @@
 extends: existence
 message: "'%s' is a vague intensifier. Be specific or provide evidence."
-link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/VagueIntensifiers.yml
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/VagueIntensifiers.yml
 ignorecase: true
 level: suggestion
 tokens:
