@@ -1,0 +1,3 @@
+$ cdf ${REPO}/fixtures/BenBalter.NumericDates
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:21:BenBalter.NumericDates:'6/5/2026' reads differently across regions. Write the month name, e.g. 'June 5, 2026'.

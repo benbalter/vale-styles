@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# Measure how often rules fire on a corpus, before and after a date (default
+# 2022-12, ChatGPT's release). See cmd/calibrate for flags. Example:
+#
+#   script/calibrate -rules AIPatterns.MicDrop ~/projects/benbalter.github.com/src/content/posts
+
+exec go run ./cmd/calibrate "$@"

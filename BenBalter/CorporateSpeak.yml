@@ -11,7 +11,7 @@ tokens:
   - low-hanging fruit
   - thrown under the bus
   - think outside the box
-  - let['’]s touch base
+  - touch(?:ed|ing)? base
   - get my manager['’]s blessing
   - it['’]s on my radar
   - ping me
@@ -22,9 +22,18 @@ tokens:
   - move the goal post
   - apples to apples
   - win-win
-  - circle back around
+  - circl(?:e|ed|ing) back
   - all hands on deck
   - take this offline
   - drill-down
   - elephant in the room
   - on my plate
+  - move the needle
+  - deep dive
+  - loop(?:ed|ing)? (?:me|you|them|him|her|us) in
+  - drop(?:ped|s)? the ball
+  - hit a home run
+  - punt(?:ed|ing)? on
+  - out of left field
+  - step up to the plate
+  - a slam dunk

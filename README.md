@@ -33,14 +33,16 @@ severity (or turn it off) in your own `.vale.ini` — e.g. `BenBalter.Buzzwords 
 | `Buzzwords` | warning | Corporate buzzwords ("leverage", "synergy", "robust", "holistic") with concrete replacements. |
 | `But` | warning | Paragraphs that open with "but". |
 | `Cliches` | warning | Clichés ("back to the drawing board", "think outside the box"). |
-| `CorporateSpeak` | warning | Corporate-speak ("synergy", "circle back"). |
+| `CorporateSpeak` | warning | Corporate-speak and idioms that don't translate ("circle back", "drop the ball", "move the needle"). |
 | `CulturalInclusion` | warning | Non-inclusive language, with inclusive alternatives. |
 | `FillerWords` | warning | Filler that adds no meaning. |
 | `HyphenatedAdverbs` | warning | Unneeded hyphens after `-ly` adverbs. |
 | `MeaningfulLinkWords` | warning | Non-descriptive link text ("click here", "this"). |
+| `NumericDates` | suggestion | All-numeric dates ("6/5/2026") that read differently across regions. |
 | `OxfordComma` | warning | Missing serial comma in lists of three or more. |
 | `Redundancy` | suggestion | Wordy phrases with a shorter form ("in order to", "the vast majority of"). |
 | `SentanceSpacing` | warning | Double spaces between sentences. |
+| `Terms` | warning | Product names spelled wrong ("Github", "Javascript", "Wordpress"). |
 | `So` | warning | Sentences that open with "so". |
 
 ## AIPatterns rules
@@ -59,6 +61,7 @@ the patterns that are near zero in Ben's pre-2023 posts.
 | `ChatbotArtifacts` | error | Chatbot leftovers ("I hope this helps", "Certainly!"). |
 | `DisguiseMetaphors` | warning | One thing "dressed up as" or "in a trench coat" as another. |
 | `EmDash` | warning | Em dashes. En dashes for ranges are fine. |
+| `EmDashDensity` | suggestion | Three or more em dashes in one paragraph, for consumers that turn `EmDash` off. |
 | `EmphaticItalics` | suggestion | Italicized common words (*is*, *and*, *actually*) doing the sentence's work. |
 | `FalseExclusivity` | warning | Insider-knowledge claims ("what nobody tells you", "the hidden cost"). |
 | `Fingerprints` | error | Generation fingerprints ("as an AI language model", leaked citation markup). |

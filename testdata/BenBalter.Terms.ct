@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/BenBalter.Terms
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:21:BenBalter.Terms:Use 'GitHub' instead of 'Github'.
+test.md:5:15:BenBalter.Terms:Use 'WordPress' instead of 'Wordpress'.
+test.md:5:34:BenBalter.Terms:Use 'JavaScript' instead of 'Javascript'.
