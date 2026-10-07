@@ -1,5 +1,6 @@
 extends: existence
 message: "'%s' is the AI negation-antithesis construction. Keep only if the contrast is earned; otherwise state the point directly."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/Antithesis.yml
 ignorecase: true
 nonword: true
 level: suggestion

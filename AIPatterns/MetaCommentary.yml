@@ -1,5 +1,6 @@
 extends: existence
 message: "Avoid meta-commentary like '%s'. Just do it directly."
+link: https://github.com/benbalter/vale-styles/blob/master/AIPatterns/MetaCommentary.yml
 ignorecase: true
 level: error
 tokens:
