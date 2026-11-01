@@ -21,6 +21,23 @@ Each release ships two styles. `BenBalter` holds the house rules below;
 `AIPatterns` flags the cadence and vocabulary of AI-drafted prose. Use either or
 both.
 
+### Shared config
+
+If you also load [write-good](https://github.com/errata-ai/write-good) or
+[proselint](https://github.com/errata-ai/proselint), add
+`BenBalterConfig.zip` after them in `Packages`. It turns off the rules that
+flag deliberate voice choices (`write-good.Passive`, `write-good.E-Prime`, a
+sentence-opening "So" or "But") or duplicate a curated `BenBalter` rule
+(`write-good.Cliches`, `proselint.CorporateSpeak`), so each repo doesn't keep
+its own copy of that list. See [`BenBalterConfig/.vale.ini`](BenBalterConfig/.vale.ini).
+
+```ini
+Packages = write-good, proselint, https://github.com/benbalter/vale-styles/releases/download/v0.0.7/BenBalter.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.7/AIPatterns.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.7/BenBalterConfig.zip
+```
+
+Vale reads it before your own `.vale.ini`, so you can still turn any of those
+rules back on. It doesn't load styles itself.
+
 Then `vale sync` to download it and `vale <files>` to lint. Override any rule's
 severity (or turn it off) in your own `.vale.ini` — e.g. `BenBalter.Buzzwords = error`.
 

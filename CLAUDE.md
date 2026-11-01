@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Two [Vale](https://vale.sh) style packages, one YAML rule per file: the house rules in [`BenBalter/`](BenBalter/) and the AI-tell rules in [`AIPatterns/`](AIPatterns/) (moved here from ben.balter.com so the blog, the book, and other repos share one copy). Consumers download a release's `BenBalter.zip` and/or `AIPatterns.zip` through `Packages` in their `.vale.ini`.
+Two [Vale](https://vale.sh) style packages, one YAML rule per file: the house rules in [`BenBalter/`](BenBalter/) and the AI-tell rules in [`AIPatterns/`](AIPatterns/) (moved here from ben.balter.com so the blog, the book, and other repos share one copy). Consumers download a release's `BenBalter.zip` and/or `AIPatterns.zip` through `Packages` in their `.vale.ini`, plus `BenBalterConfig.zip`, a [config package](https://docs.vale.sh/keys/packages) ([`BenBalterConfig/.vale.ini`](BenBalterConfig/.vale.ini)) that turns off the write-good and proselint rules every consumer was disabling by hand. [`config_test.go`](config_test.go) serves it locally, runs `vale sync` against it as a consumer would, and checks what it turns off.
 
 ## Commands
 
