@@ -36,7 +36,8 @@ Packages = write-good, proselint, https://github.com/benbalter/vale-styles/relea
 ```
 
 Vale reads it before your own `.vale.ini`, so you can still turn any of those
-rules back on. It doesn't load styles itself.
+rules back on (on Vale 3.25 or newer; Vale 3.14 ignores a consumer's `= YES`
+for a rule a package turned off). It doesn't load styles itself.
 
 Then `vale sync` to download it and `vale <files>` to lint. Override any rule's
 severity (or turn it off) in your own `.vale.ini` — e.g. `BenBalter.Buzzwords = error`.
