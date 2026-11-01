@@ -1,0 +1,18 @@
+extends: existence
+message: "'%s' cites nobody. Name the source and the result, or cut the claim."
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/VagueAttribution.yml
+ignorecase: true
+level: warning
+# 0.01 per 1,000 words in Ben's posts before 2022-12 (two "research suggests",
+# which he left out here so the rule stays quiet on his voice), 0 after.
+tokens:
+  - studies show
+  - studies have shown
+  - studies suggest
+  - research shows
+  - research has shown
+  - experts agree
+  - experts say
+  - widely regarded
+  - widely considered
+  - it is widely believed

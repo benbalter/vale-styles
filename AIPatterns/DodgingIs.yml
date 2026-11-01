@@ -1,0 +1,13 @@
+extends: existence
+message: "'%s' dodges 'is' or 'has'. Say 'is' or 'has' unless the fancier verb means something more."
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/DodgingIs.yml
+ignorecase: true
+level: warning
+# 0 hits per 1,000 words in Ben's posts before or after 2022-12 ("serve as"
+# and "served as" were 0.07 before, so they're his voice and left out). From the
+# writing-style guide's structural tells ("Dodging 'is'").
+tokens:
+  - serves as
+  - stands as
+  - stood as
+  - boasts
