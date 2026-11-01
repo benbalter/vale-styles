@@ -59,7 +59,9 @@ the patterns that are near zero in Ben's pre-2023 posts.
 | `Antithesis` | suggestion | "It's not X, it's Y" constructions. |
 | `Aphorisms` | suggestion | Formulaic aphorisms in place of a concrete claim. |
 | `ChatbotArtifacts` | error | Chatbot leftovers ("I hope this helps", "Certainly!"). |
+| `ConfidenceOpeners` | warning | Sentences that open by announcing they matter ("Notably,", "Importantly,", "Crucially,"). |
 | `DisguiseMetaphors` | warning | One thing "dressed up as" or "in a trench coat" as another. |
+| `DodgingIs` | warning | Fancy stand-ins for "is" or "has" ("serves as", "stands as", "boasts"). |
 | `EmDash` | warning | Em dashes. En dashes for ranges are fine. |
 | `EmDashDensity` | suggestion | Three or more em dashes in one paragraph, for consumers that turn `EmDash` off. |
 | `EmphaticItalics` | suggestion | Italicized common words (*is*, *and*, *actually*) doing the sentence's work. |
@@ -71,11 +73,14 @@ the patterns that are near zero in Ben's pre-2023 posts.
 | `MicDrop` | suggestion | Stock closers ("Full stop.", "And it shows."). |
 | `PerformativeEnthusiasm` | error | "Great question!", "Excellent point!". |
 | `PlainWords` | warning | Inflated words with plain substitutes. |
+| `Puffery` | warning | Importance puffery ("a pivotal moment", "plays a crucial role"). |
 | `RhetoricalQuestions` | suggestion | Self-answered setups ("So why does this matter?"). |
 | `SetupPhrases` | warning | "When it comes to", "In today's world". |
 | `Signposts` | error | Signposts that announce a twist instead of delivering one. |
 | `ThisConstructions` | error | "This ensures", "This allows" constructions. |
+| `TrailingAnalysis` | warning | Fake analysis in a trailing clause (", highlighting the team's commitment"). |
 | `Transitions` | warning | "Furthermore", "Moreover", "Additionally". |
+| `VagueAttribution` | warning | Claims that cite nobody ("studies show", "experts agree"). |
 | `VagueIntensifiers` | suggestion | "highly effective", "incredibly valuable". |
 | `Vocabulary` | warning | Words AI overuses ("delve", "tapestry", "robust"). |
 | `WeakOpenings` | suggestion | Weak sentence openers. |

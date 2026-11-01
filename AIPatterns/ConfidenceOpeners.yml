@@ -1,0 +1,11 @@
+extends: existence
+message: "'%s' opens a sentence by announcing it matters. Cut the adverb and let the sentence prove it."
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/ConfidenceOpeners.yml
+level: warning
+nonword: true
+# Case-sensitive and anchored to the start of a sentence, so mid-sentence
+# "notably faster" stays quiet. 0 hits per 1,000 words in Ben's posts before
+# or after 2022-12. "Ultimately," is left out: it's six of six pre-2023 hits,
+# so it's Ben's voice.
+tokens:
+  - '(?:^|(?<=[.!?]\s))(?:Notably|Importantly|Crucially|Interestingly|Significantly|Undeniably|Fundamentally),'

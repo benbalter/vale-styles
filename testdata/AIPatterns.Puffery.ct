@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/AIPatterns.Puffery
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:12:AIPatterns.Puffery:'marks a pivotal moment' inflates importance instead of stating the fact. Say what happened and let the reader judge.
+test.md:5:15:AIPatterns.Puffery:'plays a crucial role' inflates importance instead of stating the fact. Say what happened and let the reader judge.
+test.md:7:8:AIPatterns.Puffery:'played a key role' inflates importance instead of stating the fact. Say what happened and let the reader judge.

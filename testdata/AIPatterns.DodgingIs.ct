@@ -1,0 +1,5 @@
+$ cdf ${REPO}/fixtures/AIPatterns.DodgingIs
+$ vale --output=line --sort --normalize --relative --no-global --no-exit test.md
+test.md:3:10:AIPatterns.DodgingIs:'serves as' dodges 'is' or 'has'. Say 'is' or 'has' unless the fancier verb means something more.
+test.md:5:17:AIPatterns.DodgingIs:'boasts' dodges 'is' or 'has'. Say 'is' or 'has' unless the fancier verb means something more.
+test.md:7:12:AIPatterns.DodgingIs:'stood as' dodges 'is' or 'has'. Say 'is' or 'has' unless the fancier verb means something more.

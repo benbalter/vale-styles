@@ -1,0 +1,12 @@
+extends: existence
+message: "'%s' tacks fake analysis onto a fact. Replace it with the actual consequence, or cut it."
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/TrailingAnalysis.yml
+ignorecase: true
+level: warning
+nonword: true
+# "The launch adds file search, highlighting the team's commitment to ..." A
+# trailing -ing clause that claims significance instead of naming a result. 0
+# hits per 1,000 words in Ben's posts before or after 2022-12. Requires the
+# comma and a following determiner so a plain "highlighting text" stays quiet.
+tokens:
+  - ',\s(?:highlighting|underscoring|showcasing|emphasizing|reflecting|signaling|signalling|demonstrating)\s(?:the|its|their|how|a|an|our)\b'

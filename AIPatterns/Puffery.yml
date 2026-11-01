@@ -1,0 +1,15 @@
+extends: existence
+message: "'%s' inflates importance instead of stating the fact. Say what happened and let the reader judge."
+link: https://github.com/benbalter/vale-styles/blob/main/AIPatterns/Puffery.yml
+ignorecase: true
+level: warning
+# 0 hits per 1,000 words in Ben's posts before or after 2022-12. "Testament
+# to" lives in BenBalter.Buzzwords, so it isn't repeated here.
+tokens:
+  - pivotal moment
+  - pivotal role
+  - vital role
+  - plays a (?:key|crucial|critical|vital|pivotal|central|significant) role
+  - played a (?:key|crucial|critical|vital|pivotal|central|significant) role
+  - marks a (?:new|pivotal|turning|significant) (?:chapter|era|moment|point|milestone)
+  - marks a turning point
