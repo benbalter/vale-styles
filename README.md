@@ -11,7 +11,7 @@ Add the package to your `.vale.ini` and enable the style:
 
 ```ini
 StylesPath = .github/styles
-Packages = https://github.com/benbalter/vale-styles/releases/download/v0.0.7/BenBalter.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.7/AIPatterns.zip
+Packages = https://github.com/benbalter/vale-styles/releases/download/v0.0.8/BenBalter.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.8/AIPatterns.zip
 
 [*.md]
 BasedOnStyles = BenBalter, AIPatterns
@@ -32,7 +32,7 @@ sentence-opening "So" or "But") or duplicate a curated `BenBalter` rule
 its own copy of that list. See [`BenBalterConfig/.vale.ini`](BenBalterConfig/.vale.ini).
 
 ```ini
-Packages = write-good, proselint, https://github.com/benbalter/vale-styles/releases/download/v0.0.7/BenBalter.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.7/AIPatterns.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.7/BenBalterConfig.zip
+Packages = write-good, proselint, https://github.com/benbalter/vale-styles/releases/download/v0.0.8/BenBalter.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.8/AIPatterns.zip, https://github.com/benbalter/vale-styles/releases/download/v0.0.8/BenBalterConfig.zip
 ```
 
 Vale reads it before your own `.vale.ini`, so you can still turn any of those
